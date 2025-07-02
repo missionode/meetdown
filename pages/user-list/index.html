@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeetDown - Connect!</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="user-list.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <span class="material-icons coffee-icon">local_cafe</span>
+            <h1>MeetDown</h1>
+        </div>
+        <div class="header-actions">
+            <div class="profile-thumb">
+                <img id="userProfileThumb" src="" alt="Your Profile">
+            </div>
+            <button id="refreshBtn" class="icon-btn" title="Refresh Users">
+                <span class="material-icons">refresh</span>
+            </button>
+            <button id="logoutBtn" class="icon-btn" title="Logout">
+                <span class="material-icons">logout</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div id="loadingIndicator" class="loading-indicator">
+            <div class="spinner"></div>
+            <p>Finding vibes around you...</p>
+        </div>
+        <div id="userListContainer" class="user-list-container">
+            </div>
+        <div id="noUsersMessage" class="info-message" style="display: none;">
+            <span class="material-icons">sentiment_dissatisfied</span>
+            <p>No chai or coffee lovers found within 250 meters. Try again later!</p>
+        </div>
+    </main>
+
+    <div class="overlay">
+        <img src="" alt="Full size image">
+    </div>
+
+    <script src="../../assets/js/global.js"></script>
+    <script src="user-list.js"></script>
+</body>
+</html>

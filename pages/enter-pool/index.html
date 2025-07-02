@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeetDown - Create Profile</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="enter-pool.css">
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">
+                <h2>Welcome !</h2>
+                <p>Create your profile to start connecting with other chai and coffee lovers.</p>
+            </div>
+            <div class="profile-upload-section">
+                <label for="profileImageInput" class="profile-avatar-placeholder">
+                    <img id="profileImagePreview" src="../../assets/img/profile_placeholder.webp" alt="Profile Avatar Placeholder">
+                    <span class="material-icons camera-icon">photo_camera</span>
+                    <input type="file" id="profileImageInput" accept="image/*" style="display: none;">
+                </label>
+                <p class="help-text">Use a clear image so that users can identify you</p>
+            </div>
+            <div class="form-group">
+                <label for="userName">Your Name</label>
+                <input type="text" id="userName" placeholder="Enter your identifiable name" required>
+            </div>
+            <button id="letsGoBtn" class="btn-primary">Let's Go!</button>
+        </div>
+    </div>
+
+    <script src="../../assets/js/global.js"></script>
+    <script src="enter-pool.js"></script>
+</body>
+</html>

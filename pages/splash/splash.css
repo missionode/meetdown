@@ -1,0 +1,47 @@
+/* Splash Page Styles */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif; /* Using a common sans-serif if Inter is not easily embeddable, otherwise we'd link it */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4; /* Light grey background */
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+.splash-container {
+    text-align: center;
+    animation: fadeInScale 1.5s ease-out forwards; /* Simple animation */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4CAF50; /* A pleasant green for the logo */
+}
+
+.logo .material-icons {
+    font-size: 64px; /* Medium size for the icon */
+    margin-right: 15px; /* Space between icon and text */
+}
+
+.logo h1 {
+    font-size: 52px;
+    font-weight: bold;
+    margin: 0;
+    color: #333; /* Darker text for contrast */
+}
+
+/* Simple fade-in and scale animation */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
