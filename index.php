@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meetdown splash</title>
 </head>
-<body>
+<body style="background: red">
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', () => {
     // Redirect to the Enter Pool page after 3 seconds
